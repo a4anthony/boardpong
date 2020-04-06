@@ -8,7 +8,6 @@
     <title>BoardPong</title>
 
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
 
     <!-- fontawesome -->
     <link href="{{asset('css/fontawesome.min.css')}}" rel="stylesheet">

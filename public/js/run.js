@@ -136,8 +136,10 @@ $(document).ready(function() {
                 setTimeout(function() {
                     $('.popup-error').modal('show');
                 }, 500)
+                setTimeout(function() {
+                    $("#bar").css("animation", "");
+                }, 1500)
                 $("#horizontal").css("animation", "");
-                $("#bar").css("animation", "");
                 $("#ball").css("animation", "stop 1s ease 0s 1 normal forwards");
                 clearInterval(interval);
             } else {
@@ -312,11 +314,11 @@ $(document).ready(function() {
             }
 
             if ((goalHorizontalMatch == true) && (goalVerticalMatch == true)) {
-                $("#bar").css("animation", "");
                 $("#horizontal").removeClass('horizontal-animation');
                 $("#horizontal").css("animation", "");
                 $("#ball").addClass('ball-goal');
                 setTimeout(function() {
+                    $("#bar").css("animation", "");
                     $('.popup-success').modal('show');
                 }, 1500)
                 clearInterval(interval);
