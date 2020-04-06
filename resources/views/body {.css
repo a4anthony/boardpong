@@ -1,0 +1,126 @@
+body {
+    background: rgb(6, 1, 17)!important;
+    overflow-y: hidden;
+}
+
+.board {
+    height: 500px;
+    width: 750px;
+    border-radius: 10px;
+    border: 5px solid orange;
+}
+
+.circle {
+    display: block;
+    background: black;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    margin: 0;
+    position: relative;
+    top: 235px;
+}
+
+.board-inner {
+    z-index: -200;
+    position: relative;
+    height: 100%;
+    background: rgb(205, 189, 240);
+}
+
+.play-btn {
+    position: relative;
+    top: 235px;
+}
+
+.goal {
+    position: relative;
+    top: -465px;
+    right: 5px;
+}
+
+.border-1 {
+    display: block;
+    background: orange;
+    border-radius: 50%;
+    height: 5px;
+    width: 5px;
+    margin: 0;
+    position: relative;
+    top: 172.5px;
+    left: 750px;
+    z-index: 100;
+}
+
+.border-2 {
+    display: block;
+    background: orange;
+    border-radius: 50%;
+    height: 5px;
+    width: 5px;
+    margin: 0;
+    position: relative;
+    top: 167.5px;
+    left: 750px;
+    z-index: 100;
+}
+
+.goal-line {
+    display: block;
+    background: rgb(6, 1, 17);
+    height: 90px;
+    width: 5px;
+    margin: 0;
+    position: relative;
+    top: 170px;
+    left: 750px;
+}
+
+.block {
+    display: block;
+    background: rgb(6, 1, 17);
+    background: red;
+    height: 90px;
+    width: 10px;
+    margin: 0;
+    position: relative;
+    margin-bottom: 90px;
+    z-index: -40;
+}
+
+.animate-goal {
+    animation: block 1s linear 0s infinite alternate;
+}
+
+.animate-circle {
+    animation: example 1s linear 0s infinite alternate;
+}
+
+@keyframes example {
+    from {
+        left: 0;
+    }
+    to {
+        left: 100%;
+    }
+}
+
+@keyframes block {
+    from {
+        top: -640px;
+    }
+    to {
+        top: -300px;
+    }
+}
+
+.modal-content {
+    background: red!important;
+    padding: 2rem;
+}
+
+.popup-success {
+    position: relative;
+    top: 200px!important;
+    left: 50px;
+}
