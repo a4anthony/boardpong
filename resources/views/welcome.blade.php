@@ -54,7 +54,7 @@
     </div>
 
     <div class="container">
-        <div class="row" style=" height: 100%; margin-top: 10rem;">
+        <div class="row" style=" height: 100%; margin-top: 180px;">
 
             <!-- buttons -->
             <div class="col-2 text-center">
